@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1em;
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+/* general */
+:root {
+    --main-color: rgb(47,49,58);
+    --design-color: rgb(253,16,86);
+    --shadow-color: rgb(15,176,152);
+    --text-color: white;
+    --border-shadow: rgb(84,89,92,0.2);
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.break-text {
+    overflow-wrap: break-word;
+}
+
+/* Styling for header */
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 20px 20px;  
+}
+
+.name {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.link-name {
+    color: white;
+}
+
+.first-letter {
+    color: var(--design-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 2px;
+    text-shadow: 0px 2px 2px rgb(15,176,152);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li + li {
+    padding-left: 4rem; 
+}
+
+.link-nav {
+    font-size: 1.2rem;
+    color: var(--design-color);
+}
+
+.link-nav:hover { 
+   color: var(--shadow-color);
+}
+
+.icon {
+    font-size: 25px;
+    padding: 2px;
+    margin: 5px;
+}
+
+/* Styling for main; Information about album */
+.container-main {  
+    padding: 30px 30px 60px;  
+}
+
+.intro {
+   width: 60%;
+   display: flex; 
+   margin: 0 auto; 
+   justify-content: space-around;
+   align-items: center;
+}
+
+.text {
+    color: var(--text-color);
+    text-align: left;
+    font-size: 10px;
+    font-weight: bold; 
+    padding: 5px;  
+}
+
+.point {
+    color: var(--design-color);
+}
+
+.comma {
+    color: var(--shadow-color);
+}
+
+.letter {
+    color: var(--design-color);    
+    text-shadow:  3px 3px rgb(15,176,152);
+}
+
+.my-picture {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-picture img {   
+    max-width: 400px;
+    width: 100%;  
+    opacity: .6;
+}
+
+.tag-img {
+    color: #515152;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.description { 
+    color: var(--text-color); 
+    background-color: var(--shadow-color);
+    letter-spacing: 2px;
+    line-height: 24px;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-align: center; 
+    text-transform: uppercase;  
+    padding: 1%;   
+    margin: 20px 20px;  
+}
+
+@media only screen and (min-width: 992px) {
+    .text{
+        font-size: 1em;
+    }
+
+    .description {
+        font-size: 0.8em;
+    } 
+}
+
+@media only screen and (min-width: 1200px) {
+    .text{
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 1.2em;
+    }   
+}
+
+/* Styling for main; work */
+.work {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5%;
+    border-style: ridge;
+    border-color: var(--design-color);
+}
+
+.about {
+    grid-column: 1/3;
+    text-align: center;   
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.header-work {
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+.short-desc {
+    color: white;
+    line-height: 30px;
+    font-size: 1.5em; 
+    letter-spacing: 2px;
+}
+
+.footer-about {
+    padding: 10px;
+    color: var(--shadow-color);
+    font-size: 1.5em;
+    font-style:italic;
+}
+
+.contact-me a {
+    text-decoration: none;
+    color: var(--shadow-color);
+}
+
+.contact-me a:hover {
+    color: var(--design-color);
+    text-transform: uppercase;
+}
+
+
+.skills {
+    text-align: center;
+    grid-column: 1/3;
+    padding: 20px 100px 20px;
+}
+
+.enumeration {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.item {
+    height: 100px;
+    background-color: red;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    padding: 5px;
+    background-color: var(--shadow-color);
+}
+
+
+.item img {
+    max-width: 90px;
+    
+    max-height: 150px;
+    height: 100%;
+}
+
+/* Styling for footer */
+.footer-end {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    background-color: var(--main-color);
+}
+
+.rights {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
