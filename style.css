@@ -211,7 +211,6 @@ a {
 
 .item {
     height: 100px;
-    background-color: red;
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -258,11 +257,20 @@ a {
     .text {
        font-size: 1.8rem;
     }
+
+    .letter {   
+        text-shadow:  1px 1px rgb(15,176,152);
+    }
 }
 
 @media only screen and (max-width: 880px) {
     .text {
         font-size: 1.4rem;
+    }
+
+    
+    .first-letter {
+        text-shadow: 0px 1px 1px rgb(15,176,152);
     }
 }
 
@@ -329,15 +337,13 @@ a {
     .skills {
         font-size: 13px;
     }
-
     
     .short-desc {
         color: white;
         line-height: 30px;
         font-size: 1.5em; 
         letter-spacing: 1px;
-    }  
-    
+    }      
 }
 
 @media screen and (max-width: 460px) {
@@ -354,13 +360,13 @@ a {
     }
 
     .description {
-        font-size: 5px;
+        font-size: 7px;
         letter-spacing: 1px;
         line-height: 12px;
-     }
+    }
 
     .text {
-         font-size: 10px;
+         font-size: 11px;
     }
 
     .about {
@@ -379,23 +385,20 @@ a {
     }
 
     .first-letter {
-         font-size: 1.2rem;
-       
+        font-size: 1.2rem;
     }
 
     .link-nav {
         font-size: 0.4rem;
     }
     
-    .description {      
-        
-        font-size: 3px;
+    .description { 
+        font-size: 6px;
         line-height: 8px;        
     }
 
     .text {
-       font-size: 7px;
-        
+       font-size: 10px;
     }
 
     .about {
@@ -405,7 +408,6 @@ a {
     .skills {
         font-size: 10px;
     }
-
     
     .short-desc {
         color: white;
@@ -430,12 +432,12 @@ a {
     }
     
     .description { 
-        font-size: 2px;
+        font-size: 4px;
         line-height: 5px;   
     }
   
     .text {
-        font-size: 5px;
+        font-size: 6px;
     }
 
     .about {
@@ -445,7 +447,6 @@ a {
     .skills {
         font-size: 6px;
     }
-
     
     .short-desc {
         color: white;
